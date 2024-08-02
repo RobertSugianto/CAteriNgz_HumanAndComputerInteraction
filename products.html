@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CAteriNgz</title>
+        <link href="assets/Icons/Product logo.png" rel="shortcut icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/products.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="logo yanone-kaffeesatz-Title">
+                <img src="assets/Icons/Product logo.png" alt="">
+                <h1>CAteriNgz</h1>
+            </div>
+            <div class="navigator yanone-kaffeesatz-Subtitle">
+                <ul>
+                    <li class="navigation"><a href="index.html">Home</a></li>
+                    <li class="navigation"><a href="#">Product</a></li>
+                    <li class="navigation"><a href="testimonial.html">Testimonial</a></li>
+                    <li class="navigation"><a href="aboutUs.html">About Us</a></li>
+                    <li class="navigation regisBtn kite-one-Button"><a href="aboutUs.html">Join Us</a></li>
+                    <li class="navigation" id="openSideBar"><img src="assets/Icons/HamburgerMenuNotActive.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Side Bar if page less than 768 px -->
+        <div class="sidebar">
+            <div class="navigator yanone-kaffeesatz-Subtitle">
+                <ul>
+                    <li class="navigation sidebarNav" id="closeSidebar"><img src="assets/Icons/HamburgerMenuActive.png" alt=""></li>
+                    <li class="navigation sidebarNav"><a href="index.html">Home</a></li>
+                    <li class="navigation sidebarNav"><a href="#">Product</a></li>
+                    <li class="navigation sidebarNav"><a href="testimonial.html">Testimonial</a></li>
+                    <li class="navigation sidebarNav"><a href="aboutUs.html">About Us</a></li>
+                    <li class="navigation sidebarNav"><a href="aboutUs.html">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <!-- For filtering and searching the products -->
+            <div class="filterAndSearchBar">
+                <div class="filterDIV yanone-kaffeesatz-Body">
+                    <button class="filter">
+                        <img src="assets/Icons/icons8-filter-100.png" alt="filter">
+                        <p>Filter</p>
+                    </button>
+                    <div class="filterDrop">
+                        <div class="filterBox">
+                            <input type="radio" name="filterType" id="ShowAll" onchange="show('All')" checked>
+                            <label for="ShowAll">Show All</label>
+                        </div>
+                        <div class="filterBox">
+                            <input type="radio" name="filterType" id="ShowIndonesian" onchange="show('Indonesian')">
+                            <label for="ShowIndonesian">Show Indonesian</label>
+                        </div>
+                        <div class="filterBox">
+                            <input type="radio" name="filterType" id="ShowChinese" onchange="show('Chinese')">
+                            <label for="ShowChinese">Show Chinese</label>
+                        </div>
+                        <div class="filterBox">
+                            <input type="radio" name="filterType" id="ShowWestern" onchange="show('Western')">
+                            <label for="ShowWestern">Show Western</label>
+                        </div>
+                        <div class="filterBox">
+                            <input type="radio" name="filterType" id="ShowEastern" onchange="show('Eastern')">
+                            <label for="ShowEastern">Show Eastern</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchBarDIV">
+                    <input type="text" name="search" id="searchBar" class="yanone-kaffeesatz-Body" placeholder="Search menu ...">
+                    <button class="submit"><img src="assets/Icons/icons8-search-100.png" alt=""></button>
+                </div>
+            </div>
+            <!-- All product in the company -->
+            <div class="productTable">
+                <div class="productCard Indonesian">
+                    <div class="productPreview">
+                        <img src="assets/Images/BeefRawon.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Beef Rawon</h4>
+                        <p class="yanone-kaffeesatz-Body">Savor the unique and robust flavors of our Beef Rawon, a traditional beef soup enriched with tender chunks of beef and a distinctive black nut (keluak) broth. This hearty dish offers a profound and authentic Indonesian dining experience.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Indonesian">
+                    <div class="productPreview">
+                        <img src="assets/Images/BeefRendang.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Beef Rendang</h4>
+                        <p class="yanone-kaffeesatz-Body">Experience the indulgence of our Beef Rendang, a slow-cooked delicacy infused with a harmonious blend of coconut milk, lemongrass, and a medley of exotic spices. This dish delivers a deep and sumptuous flavor.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Chinese">
+                    <div class="productPreview">
+                        <img src="assets/Images/BeiJingKaoYa.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Pecking Duck</h4>
+                        <p class="yanone-kaffeesatz-Body">Savor the luxurious and aromatic flavors of our Peking Duck, featuring crispy, roasted duck paired with its flavorful and fragrant skin. This celebrated dish offers a rich and satisfying taste of traditional Chinese cuisine.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Chinese">
+                    <div class="productPreview">
+                        <img src="assets/Images/dimsum.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Dim Sum</h4>
+                        <p class="yanone-kaffeesatz-Body">Indulge in our Dim Sum, offering an array of delicate, bite-sized delicacies that are steamed to perfection. This delightful dish provides a tantalizing and authentic taste of Chinese culinary artistry.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Western">
+                    <div class="productPreview">
+                        <img src="assets/Images/FishAndChips.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Fish and Chips</h4>
+                        <p class="yanone-kaffeesatz-Body">Delight in our Fish and Chips, where crispy, golden-battered fish fillets are served alongside perfectly cooked fries and a tangy tartar sauce. This iconic dish delivers an impeccable blend of textures and flavors for an utterly enjoyable meal.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Western">
+                    <div class="productPreview">
+                        <img src="assets/Images/Hamburger.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Hamburger</h4>
+                        <p class="yanone-kaffeesatz-Body">Enjoy our classic Hamburger, featuring a juicy beef patty grilled to perfection and topped with fresh lettuce, ripe tomato, and melted cheese. This satisfying and timeless favorite provides a hearty and fulfilling meal.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Eastern">
+                    <div class="productPreview">
+                        <img src="assets/Images/JapaneseCurry.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Japanese Curry</h4>
+                        <p class="yanone-kaffeesatz-Body">Delight in our Japanese Curry, with tender pieces of meat and vegetables simmered in a mildly sweet and savory curry sauce. This hearty dish provides a comforting and delicious meal that is perfect for any occasion.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Western">
+                    <div class="productPreview">
+                        <img src="assets/Images/MacAndCheese.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Macaroni and Cheese</h4>
+                        <p class="yanone-kaffeesatz-Body">Savor the ultimate comfort of our Macaroni and Cheese, featuring tender pasta enveloped in a velvety, rich cheese sauce. This dish offers a heartwarming and indulgent meal that is perfect for any occasion.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Chinese">
+                    <div class="productPreview">
+                        <img src="assets/Images/MieGoreng.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Fried Noodle</h4>
+                        <p class="yanone-kaffeesatz-Body">Delight in our Fried Noodle, a stir-fried dish bursting with bold flavors and a tempting medley of fresh vegetables and tender proteins.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Chinese">
+                    <div class="productPreview">
+                        <img src="assets/Images/NasiGoreng.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Fried Rice</h4>
+                        <p class="yanone-kaffeesatz-Body">Experience the irresistible aroma and flavors of our Fried Rice, featuring fluffy grains stir-fried with a colorful array of vegetables, savory meats, and aromatic spices, perfectly balanced and bursting with umami.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Indonesian">
+                    <div class="productPreview">
+                        <img src="assets/Images/RoastedChicken.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Roasted Chicken</h4>
+                        <p class="yanone-kaffeesatz-Body">Delight in our Indonesian Roasted Chicken, featuring tender, marinated chicken perfectly roasted with a symphony of traditional spices. This dish offers a rich and complex flavor that embodies the heart of Indonesian culinary artistry.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Eastern">
+                    <div class="productPreview">
+                        <img src="assets/Images/RotiCanai.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Roti Canai</h4>
+                        <p class="yanone-kaffeesatz-Body">Indulge in our Roti Canai, a beloved Malaysian flatbread known for its soft, flaky texture and delightful layers. Served with a side of savory curry sauce or creamy dhal, this classic dish offers a comforting and flavorful experience.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Indonesian">
+                    <div class="productPreview">
+                        <img src="assets/Images/SateAyam.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Sate Ayam</h4>
+                        <p class="yanone-kaffeesatz-Body">Indulge in our Chicken Satay, with succulent chicken skewers marinated in a fragrant blend of spices and grilled to perfection. Accompanied by a classic peanut sauce, this dish promises a truly unforgettable culinary experience.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Western">
+                    <div class="productPreview">
+                        <img src="assets/Images/Spaghetti.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Spaghetti</h4>
+                        <p class="yanone-kaffeesatz-Body">Relish in our Spaghetti, with al dente pasta smothered in a rich tomato sauce, garnished with fresh herbs and parmesan cheese. This traditional Italian dish offers a delightful and satisfying dining experience.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Eastern">
+                    <div class="productPreview">
+                        <img src="assets/Images/Sushi.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Sushi</h4>
+                        <p class="yanone-kaffeesatz-Body">Experience the exquisite flavors of our Sushi, with the freshest and most flavorful seafood artfully combined with vinegared rice and nori. This refined dish provides an authentic and elegant taste of traditional Japanese cuisine.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+                <div class="productCard Eastern">
+                    <div class="productPreview">
+                        <img src="assets/Images/arabic-kebab-sandwich-wrapped-aluminium-foil-copy-space.jpg" alt="">
+                    </div>
+                    <div class="productDescription">
+                        <h4 class="yanone-kaffeesatz-Title">Lamb Kebab</h4>
+                        <p class="yanone-kaffeesatz-Body">Savor the succulent flavors of our Lamb Kebab, featuring tender pieces of marinated lamb skewered and grilled to perfection. Bursting with aromatic spices and served with a refreshing yogurt sauce.</p>
+                    </div>
+                    <button class="productOrderButton kite-one-Button">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="contactNfeedback">
+                <div class="contact">
+                    <h3 class="yanone-kaffeesatz-Subtitle">Get in touch with us!</h3>
+                    <div class="sosMed">
+                        <a href="https://www.facebook.com/universitasbinanusantara?mibextid=ZbWKwL"><img src="assets/Icons/Facebook.png" alt=""></a>
+                        <img src="assets/Icons/Whatsapp.png" alt="">
+                        <a href="https://www.instagram.com/binusuniversityofficial?igsh=cThzY2EzN2x3ajc0"><img src="assets/Icons/Insta.png" alt=""></a>
+                        <a href="mailto:robert.sugianto@binus.ac.id"><img src="assets/Icons/Gmail.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <h3 class="yanone-kaffeesatz-Subtitle">Send us a feedback!</h3>
+                    <div class="feedbackInput">
+                        <input type="text" name="feedback" class="yanone-kaffeesatz-Body" id="feedback"> 
+                        <button class="yanone-kaffeesatz-Body">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="yanone-kaffeesatz-Body"><img src="assets/Icons/Copyright Item.png" alt="Copyright"> Copyright 2024</p>
+                <p class="yanone-kaffeesatz-Body">All right reserved. Powered by BINUS University</p>
+            </div>
+        </div>
+        <script src="javascript/product.js"></script>
+    </body>
+</html>

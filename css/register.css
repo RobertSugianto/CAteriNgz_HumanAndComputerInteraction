@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.yanone-kaffeesatz-Title {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.yanone-kaffeesatz-Subtitle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.yanone-kaffeesatz-Body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kite-one-Button {
+  font-family: "Kite One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Navigation Styling */
+
+.navbar{
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background-color: #FD043C;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+  z-index: 99;
+}
+
+.navbar .logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .logo img{
+  height: 65px;
+}
+
+.navbar .logo h1{
+  font-size: 35px;
+  color: #FFFFFF;
+}
+
+.navbar .navigator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .navigator ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar .navigator ul .navigation{
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar .navigator ul .navigation a{
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 25px;
+  border-radius: 2.5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar .navigator ul .navigation a:hover{
+  color: #000;
+  background-color: #00F0FF;
+}
+
+.navbar .navigator ul .regisBtn a{
+  background-color: #E7F7F8;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.navbar .navigator ul .navigation:last-of-type img{
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.sidebar{
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  flex-direction: column;
+  width: 0;
+  height: 100vh;
+  background-color: #fd043a8e;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px #0000004f;
+  padding: 20px 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.sidebar .navigator{
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  backdrop-filter: blur(0);
+}
+
+.sidebar .navigator ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  transition: all 0.1s ease-in-out;
+  backdrop-filter: blur(0);
+}
+
+.sidebar .navigator ul .navigation{
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  backdrop-filter: blur(0);
+
+}
+
+.sidebar .navigator ul .navigation a{
+  text-decoration: none;
+  font-size: 0;
+  padding: 0;
+  color: #FFFFFF;
+  transition: all 0.1s ease-in-out;
+  backdrop-filter: blur(0);
+}
+
+.sidebar .navigator ul .navigation:hover:not(:first-of-type){
+  background-color: #00F0FF;
+  color: #000;
+}
+
+.sidebar .navigator ul .navigation:hover:not(:first-of-type) a{
+  color: #000;
+}
+
+.sidebar .navigator ul .navigation:last-of-type{
+  background-color: #E7F7F8;
+}
+
+.sidebar .navigator ul .navigation:last-of-type a{
+  color: #000;
+}
+
+.sidebar .navigator ul .navigation:first-of-type img{
+  height: 0;
+  margin: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  margin: 100px 20px;
+}
+
+.signInDIV{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff5479;
+  border-radius: 26px;
+}
+
+.signInDIV .companyLogo{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signInDIV .companyLogo img{
+  width: 70%;
+}
+
+.signInDIV .formSignIn{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  gap: 20px;
+  background-color: #E7F7F8;
+  border-radius: 0 26px 26px 0;
+}
+
+
+.formSignIn > h3{
+  font-size: 45px;
+}
+
+.formSignIn form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 18px;
+}
+
+.formSignIn .infoType{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.formSignIn .infoType > h4{
+  font-size: 30px;
+}
+
+.infoField{
+  display: flex;
+  flex-direction: column;
+}
+
+.infoField > p:not(.genderTitle){
+  font-size: 1vw;
+  color: #ff0000;
+}
+
+.infoField input:not(input[type='radio']){
+  height: 25px;
+  padding: 10px 5px;
+  border: solid 1px #000;
+  border-radius: 5px;
+}
+
+.infoField textarea{
+  height: 50px;
+  padding: 5px;
+  border: solid 1px #000;
+  border-radius: 5px;
+}
+
+.infoField .nameDIV{
+  display: flex;
+  gap: 20px;
+}
+
+.nameDIV div{
+  display: flex;
+  flex-direction: column;
+}
+
+.infoField .genderDIV{
+  display: flex;
+  gap: 10px;
+}
+
+.genderDIV div{
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.checkboxField{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.checkboxField span{
+  color: #0000FF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.formSignIn #submitButton{
+  width: 50%;
+  height: 30px;
+  background-color: #00F0FF;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.formSignIn #submitButton:hover{
+  border: 2px solid #00F0FF;
+  color: #00F0FF;
+  background-color: #FD043C;
+}
+
+@media screen and (max-width: 768px){
+  .navbar .navigator ul .navigation:not(:last-of-type) a{
+    height: 0;
+    width: 0;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .navbar .navigator ul .navigation:last-of-type img{
+    width: auto;
+    height: 25px;
+    opacity: 1;
+  }
+
+  .signInDIV{
+    flex-direction: column;
+  }
+
+  .signInDIV .companyLogo{
+    margin: 30px 0;
+  }
+
+  .signInDIV .formSignIn{
+    width: 100%;
+    border-radius: 0 0 26px 26px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  body{
+    background-image: url(../assets/Icons/Product\ logo.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .signInDIV .companyLogo{
+    display: none;
+  }
+
+  .infoField .nameDIV{
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .signInDIV .formSignIn{
+    width: 100%;
+    border-radius: 26px;
+    background-color: #50505023;
+    backdrop-filter: blur(7.5px);
+    box-shadow: -10px 0 10px #0000004f;
+  }
+
+  .signInDIV{
+    background-color: transparent;
+  }
+
+}

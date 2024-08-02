@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CAteriNgz</title>
+        <link href="assets/Icons/Product logo.png" rel="shortcut icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/register.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="logo yanone-kaffeesatz-Title">
+                <img src="assets/Icons/Product logo.png" alt="">
+                <h1>CAteriNgz</h1>
+            </div>
+            <div class="navigator yanone-kaffeesatz-Subtitle">
+                <ul>
+                    <li class="navigation"><a href="index.html">Home</a></li>
+                    <li class="navigation"><a href="products.html">Product</a></li>
+                    <li class="navigation"><a href="testimonial.html">Testimonial</a></li>
+                    <li class="navigation"><a href="aboutUs.html">About Us</a></li>
+                    <li class="navigation regisBtn kite-one-Button"><a href="#">Join Us</a></li>
+                    <li class="navigation" id="openSideBar"><img src="assets/Icons/HamburgerMenuNotActive.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Side Bar if page less than 768 px -->
+        <div class="sidebar">
+            <div class="navigator yanone-kaffeesatz-Subtitle">
+                <ul>
+                    <li class="navigation sidebarNav" id="closeSidebar"><img src="assets/Icons/HamburgerMenuActive.png" alt=""></li>
+                    <li class="navigation sidebarNav"><a href="index.html">Home</a></li>
+                    <li class="navigation sidebarNav"><a href="products.html">Product</a></li>
+                    <li class="navigation sidebarNav"><a href="testimonial.html">Testimonial</a></li>
+                    <li class="navigation sidebarNav"><a href="aboutUs.html">About Us</a></li>
+                    <li class="navigation sidebarNav"><a href="#">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Sign in forms -->
+        <div class="container">
+            <div class="signInDIV">
+                <div class="companyLogo">
+                    <img src="assets/Icons/Product logo.png" alt="">
+                </div>
+                <div class="formSignIn">
+                    <h3 class="yanone-kaffeesatz-Title">Sign In</h3>
+                    <form action="" method="GET" class="yanone-kaffeesatz-Body">
+                        <div class="infoType">
+                            <h4 class="yanone-kaffeesatz-Subtitle">Personal Information</h4>
+                            <div class="infoField">
+                                <div class="nameDIV">
+                                    <div class="firstName">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" name="firstName" id="firstName" placeholder="John">
+                                    </div>
+                                    <div class="lastName">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                                    </div>
+                                </div>
+                                <p id="nameError"></p>
+                            </div>
+                            <div class="infoField">
+                                <label for="emailInput">Email</label>
+                                <input type="email" name="emailInput" id="emailInput" placeholder="example@example.com">
+                                <p id="emailError"></p>
+                            </div>
+                            <div class="infoField">
+                                <label for="addressInput">Address</label>
+                                <textarea name="addressInput" id="addressInput" placeholder=""></textarea>
+                                <p id="addressError"></p>
+                            </div>
+                            <div class="infoField">
+                                <p class="genderTitle">Gender</p>
+                                <div class="genderDIV" id="genderInput">
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    <label for="male">male</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                    <label for="female">Female</label>
+                                </div>
+                                <p id="genderError"></p>
+                            </div>
+                            <div class="infoField">
+                                <label for="DOBInput">Date of Birth</label>
+                                <input type="date" name="DOBInput" id="DOBInput">
+                                <p id="DOBError"></p>
+                            </div>
+                        </div>
+                        <div class="infoType">
+                            <h4 class="yanone-kaffeesatz-Subtitle">Account Information</h4>
+                            <div class="infoField">
+                                <label for="passInput">Password</label>
+                                <input type="password" name="passInput" id="passInput" placeholder="admin123">
+                                <p id="passError"></p>
+                            </div>
+                            <div class="infoField">
+                                <label for="confPassInput">Confirm Password</label>
+                                <input type="password" name="confPassInput" id="confPassInput" placeholder="admin123">
+                                <p id="confPassError"></p>
+                            </div>
+                        </div>
+                        <div class="checkboxField">
+                            <input type="checkbox" name="agree" id="agreement">
+                            <label for="agreement">I agree with the <span>terms and conditions</span></label>
+                        </div>
+                        <button type="button" id="submitButton" class="kite-one-Button">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="javascript/register.js"></script>
+    </body>
+</html>

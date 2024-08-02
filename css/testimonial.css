@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.yanone-kaffeesatz-Title {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.yanone-kaffeesatz-Subtitle {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.yanone-kaffeesatz-Body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kite-one-Button {
+  font-family: "Kite One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Navigation Styling */
+
+.navbar{
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background-color: #FD043C;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+  z-index: 99;
+}
+
+.navbar .logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .logo img{
+  height: 65px;
+}
+
+.navbar .logo h1{
+  font-size: 35px;
+  color: #FFFFFF;
+}
+
+.navbar .navigator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .navigator ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar .navigator ul .navigation{
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar .navigator ul .navigation a{
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 25px;
+  border-radius: 2.5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.navbar .navigator ul .navigation:nth-of-type(3) a{
+  text-decoration: underline 5px;
+}
+
+.navbar .navigator ul .navigation a:hover{
+  color: #000;
+  background-color: #00F0FF;
+}
+
+.navbar .navigator ul .regisBtn a{
+  background-color: #E7F7F8;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.navbar .navigator ul .navigation:last-of-type img{
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.sidebar{
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  flex-direction: column;
+  width: 0;
+  height: 100vh;
+  background-color: #fd043a8e;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px #0000004f;
+  padding: 20px 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.sidebar .navigator{
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  backdrop-filter: blur(0);
+}
+
+.sidebar .navigator ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  transition: all 0.1s ease-in-out;
+  backdrop-filter: blur(0);
+}
+
+.sidebar .navigator ul .navigation{
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  backdrop-filter: blur(0);
+
+}
+
+.sidebar .navigator ul .navigation a{
+  text-decoration: none;
+  font-size: 0;
+  padding: 0;
+  color: #FFFFFF;
+  transition: all 0.1s ease-in-out;
+  backdrop-filter: blur(0);
+}
+
+.sidebar .navigator ul .navigation:nth-of-type(4){
+  text-decoration: underline 5px;
+  color: #FFFFFF;
+}
+
+.sidebar .navigator ul .navigation:hover:not(:first-of-type){
+  background-color: #00F0FF;
+  color: #000;
+}
+
+.sidebar .navigator ul .navigation:hover:not(:first-of-type) a{
+  color: #000;
+}
+
+.sidebar .navigator ul .navigation:last-of-type{
+  background-color: #E7F7F8;
+}
+
+.sidebar .navigator ul .navigation:last-of-type a{
+  color: #000;
+}
+
+.sidebar .navigator ul .navigation:first-of-type img{
+  height: 0;
+  margin: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.container{
+  padding-top: 30px;
+  margin: 100px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Testimonial card styling */
+.testimonial{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 30px 20px;
+  gap: 10%;
+}
+
+.testimonial:nth-of-type(even){
+  flex-direction: row-reverse;
+}
+
+.testimonial .photoProfile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  position: relative;
+
+}
+
+.testimonial .testimonialText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  padding: 30px 0;
+}
+
+.testimonial .photoProfile .backAttribute{
+  height: 66.85vh;
+  width: 31.25vw;
+}
+
+.testimonial .photoProfile .photoPerson{
+  height: 31.25vw;
+  width: auto;
+  position: absolute;
+}
+
+.testimonial .testimonialText .bigQuote{
+  font-size: 13.89vw;
+  position: absolute;
+  top: 4.01vh;
+  left: 0;
+  color: #00F0FF;
+}
+
+.testimonial:nth-of-type(even) .testimonialText .bigQuote{
+  color: #FD043C;
+}
+
+.testimonial .testimonialText .name{
+  position: absolute;
+  top: 4.01vh;
+  right: 0;
+  text-align: right;
+}
+
+.testimonialText .name .testiName{
+  font-size: 2.43vw;
+}
+
+.testimonialText .name .testiPos{
+  font-size: 1.18vw;
+}
+
+.testimonial .testimonialText .testiBody{
+  font-size: 2.08vw;
+  text-align: justify;
+}
+
+
+/* Footer Styling */
+
+.footer{
+  height: 50.804vh;
+  background-color: #E7F7F8;
+  display: block;
+  align-content: center;
+  padding: 20px 40px;
+}
+
+.contactNfeedback{
+  display: flex;
+  justify-content: space-between;
+  height: 85%;
+  align-items: center;
+}
+
+.contactNFeedback .contact{
+  display: block;
+  text-align: left;
+  justify-content: center;
+}
+
+.contact h3{
+  font-size: 4.944vh;
+  margin-bottom: 4.944vh;
+}
+
+.contact .sosMed{
+  display: flex;
+  gap: 2.778vw;
+}
+
+.contact .sosMed img{
+  height: 5vh;
+}
+
+.feedback h3{
+  text-align: left;
+  font-size: 4.944vh;
+  margin-bottom: 2vh;
+}
+
+.feedbackInput input[type='text']{
+  width: 27.639vw;
+  margin-right: 2vw;
+  padding: 1vh 1vw;
+  border: 2px solid #000;
+  font-size: 20px;
+}
+
+.feedback button{
+  height: 5.33vh;
+  width: 4.861vw;
+  font-size: 3.09vh;
+  background-color: #00F0FF;
+  border-radius: 5px;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.feedback button:hover{
+  background-color: #FD043C;
+}
+
+.copyright{
+  height: 15%;
+  display: block;
+  margin-top: 20px;
+  justify-content: center;
+  align-self: baseline;
+  text-align: center;
+  color: #414141;
+}
+
+.copyright p img{
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px){
+  .navbar .navigator ul .navigation:not(:last-of-type) a{
+    height: 0;
+    width: 0;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .navbar .navigator ul .navigation:last-of-type img{
+    width: auto;
+    height: 25px;
+    opacity: 1;
+  }
+
+  .testimonial .photoProfile .backAttribute {
+    height: 50vh;
+  }
+
+  .testimonialText .name .testiName{
+    font-size: 3vw;
+  }
+  
+  .testimonialText .name .testiPos{
+    font-size: 1.5vw;
+  }
+  
+  .testimonial .testimonialText .testiBody{
+    font-size: 2.2vw;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .testimonial {
+    margin: 10px 0;
+    height: 45vh;
+}
+
+  .testimonial .photoProfile .backAttribute {
+    height: 28vh;
+  }
+
+  .testimonial .testimonialText .bigQuote{
+    font-size: 15vw;
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    color: #00F0FF;
+  }
+  
+  .testimonial:nth-of-type(even) .testimonialText .bigQuote{
+    color: #FD043C;
+  }
+  
+  .testimonial .testimonialText .name{
+    position: absolute;
+    top: 3vh;
+    right: 0;
+    text-align: right;
+  }
+  
+  .testimonialText .name .testiName{
+    font-size: 4vw;
+  }
+  
+  .testimonialText .name .testiPos{
+    font-size: 2vw;
+  }
+  
+  .testimonial .testimonialText .testiBody{
+    font-size: 3vw;
+    text-align: justify;
+  }
+
+  /* footer styling */
+  .contactNfeedback{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contactNFeedback .contact{
+    display: block;
+    justify-content: center;
+  }
+  
+  .contact h3{
+    font-size: 4.5vh;
+    margin-bottom: 3vh;
+  }
+  
+  .contact .sosMed{
+    display: flex;
+    gap: 6vw;
+  }
+  
+  .contact .sosMed img{
+    height: 8vh;
+  }
+  
+  .feedback h3{
+    text-align: center;
+    font-size: 4.5vh;
+    margin-bottom: 3vh;
+  }
+  
+  .feedbackInput input[type='text']{
+    width: 50vw;
+  }
+  
+  .feedback button{
+    height: 6vh;
+    width: 15vw;
+    font-size: 3.5vh;
+  }
+  
+  .feedback button:hover{
+    background-color: #FD043C;
+  }
+}
